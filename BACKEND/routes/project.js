@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const projectCtrl = require('../controllers/project');
+const projectCtrl = require('../controllers/ctrlProject');
 const auth = require('../middlewares/auth');
 const { upload, optimiseImage } = require('../middlewares/multer');
 

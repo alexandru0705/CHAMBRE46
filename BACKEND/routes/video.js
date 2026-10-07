@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const videoCtrl = require('../controllers/video');
+const videoCtrl = require('../controllers/ctrlVideo');
 const auth = require('../middlewares/auth');
 
 router.get('/', videoCtrl.getAllVideos);

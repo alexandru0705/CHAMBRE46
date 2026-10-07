@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const trackCtrl = require('../controllers/track');
+const trackCtrl = require('../controllers/ctrlTrack');
 const auth = require('../middlewares/auth');
 
 router.get('/', trackCtrl.getAllTracks);
