@@ -1,0 +1,22 @@
+Initialized the frontend React project using Vite.
+Created the base directory structure for components (Banner, Header, Footer, Layout, Card) and pages (Home, About, Error).
+Installed required dependencies: sass-embedded and react-router-dom.
+Configured the root routing logic in App.jsx using react-router-dom with a layout wrapper.
+Updated main.jsx to import index.scss for global styling.
+Drafted the Layout component using an arrow function and an explicit export default statement.
+Voici un compte rendu structuré du travail réalisé sur le front-end de l'application :Découplage des pages et routage :Refactorisation 
+du composant App.jsx pour remplacer la page d'accueil générique par des pages dédiées et spécifiques par catégorie : Artwork, Project, Track, Video et About.
+Configuration de la page About en tant que route racine par défaut (/).Standardisation des composants et des bannières :Création et mise à jour du composant 
+Banner pour accepter dynamiquement les props image et title, avec une image de secours par défaut et un affichage conditionnel du titre <h1>.Standardisation 
+du composant Card universel capable d'afficher de manière conditionnelle différents métadonnées (medium, stack, genre, year, releaseYear) selon la collection 
+affichée.Intégration des appels API et des grilles :Mise en place des requêtes fetch asynchrones (useEffect et useState) connectées aux routes de
+l'API REST (/artworks, /projects, /tracks, /videos).   Structuration des feuilles de style SCSS et des grilles de mise en page pour chaque section.Résolution 
+des erreurs de build (Vite) :Correction des chemins d'importation des composants et vérification des exportations par défaut (export default) pour assurer la 
+tabilité du serveur de développement.
+
+12.10.26
+
+Here is a quick wrap-up of what we accomplished today:Header & Navigation Refinement: Built full-height navigation tab boxes with a $2\text{px}$ bottom border, 
+custom box shadows (box-shadow: 4px 4px rgba(0, 0, 0, 0.08)), and smooth hover/active transitions.   Logo Integration: Configured the stretched logo/icon 
+components and structured clean flex layouts for the brand area.   Footer Setup: Structured the footer wrapper with a relative link container holding a 1200px 
+stretched background image, paired with absolute positioning for centered text and email overlays that react smoothly to hover states.   

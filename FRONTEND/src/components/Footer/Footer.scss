@@ -1,0 +1,72 @@
+@import '../../styles/_variables.scss';
+
+.footer {
+    background-color: $color-background;
+    width: 100%;
+    padding: 1rem 0;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+&__link {
+        display: block;
+        text-decoration: none;
+        position: relative;
+        
+        &:hover {
+            .footer__text,
+            .footer__email {
+                color: $color-accent;
+            }
+        }
+    }
+
+    &__picture {
+        display: block;
+    }
+
+    &__logo {
+        width: 1200px;
+        height: 100px;
+        object-fit: fill;
+        display: block;
+        opacity: 0.35;
+        box-shadow: 8px 12px rgba(0, 0, 0, 0.5); // The shadow box effect
+        transition: opacity 1s ease;
+
+        &:hover {
+            opacity: 0.20;
+            transition: opacity 1s ease;
+        }
+    }
+
+&__text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        color: $color-primary;
+        font-weight: 400;
+        pointer-events: none;
+        transition: color 1s ease; // Base transition handles both in and out
+    }
+
+    &__email {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        color: $color-primary;
+        font-weight: 400;
+        pointer-events: none;
+        transition: color 1s ease; // Base transition handles both in and out
+    }
+}

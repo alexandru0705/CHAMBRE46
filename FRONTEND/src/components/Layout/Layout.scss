@@ -1,0 +1,10 @@
+// src/components/Layout/Layout.scss
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Forces the layout to span at least the full screen height
+
+  &__main {
+    flex: 1; // Expands to fill all remaining vertical space, pushing the footer down
+  }
+}
